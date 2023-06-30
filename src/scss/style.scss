@@ -38,6 +38,9 @@ body {
       transform: translate(-50%, -50%) rotate(-135deg);
       margin-top : -15px;
     }
+    &.prevent {
+      display: none;
+    }
   }
   .centerFlex {
     display: flex;

@@ -13,18 +13,17 @@ function First() {
         <Header></Header>
         <Section></Section>
         <div className='flexStart'>
-          <div style={{color : '#fff'}} className='title'>Buttons</div>
+          <div style={{color : '#'+Math.floor(Math.random() * 106)}} className='title'>Buttons</div>
           <span className='controller plus' onClick={()=>{
             setIndex(Array(index.length + 1).fill().map((v,i)=>i+1))
             setColors(Array(index.length + 1).fill().map((v,i)=> Math.floor(Math.random() * 256)))
             setIsBox(index.length + 1 > 0 ? true : false)
             }}>
           </span>
-          <span className='controller minus' onClick={()=>{
+          <span className={isBox ? 'controller minus' : 'controller minus prevent'} onClick={()=>{
             setIndex(Array(index.length - 1).fill().map((v,i)=>i+1))
             setColors(Array(index.length - 1).fill().map((v,i)=> Math.floor(Math.random() * 256)))
             setIsBox(index.length - 1 > 0 ? true : false)
-            console.log(index.length)
             }}>
           </span> 
         </div>
