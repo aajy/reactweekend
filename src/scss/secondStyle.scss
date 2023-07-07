@@ -1,5 +1,12 @@
 .popup {
   width: 500px;
-  height: 600px;
+  height: 200px;
   background-color: #fee;
+}
+.img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width:300px;
+  z-index: -1;
 }
