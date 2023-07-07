@@ -1,7 +1,7 @@
-import React from 'react'
 import { Header, Section, Footer} from './First-DA'
 import Button from './First-rename'
 import { useState } from 'react'
+import '../scss/firstStyle.scss'
 
 function First() {
   const [index, setIndex] = useState([0, 1, 2])
