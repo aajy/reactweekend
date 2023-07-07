@@ -1,7 +1,7 @@
 import './scss/style.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Main from './Main';
-import First from './weeks/First';
+import First from './First/First';
 
 function App() {
 	return (
